@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
-const port = 3000;
+const port = 10000;
 
 // Configurar almacenamiento con Multer
 const storage = multer.diskStorage({
