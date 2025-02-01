@@ -29,13 +29,7 @@ const upload = multer({
 
 // Página HTML para subir archivos
 app.get('/', (req, res) => {
-    res.send(`
-        <h2>Subir Archivo</h2>
-        <form action="/upload" method="POST" enctype="multipart/form-data">
-            <input type="file" name="archivo" required>
-            <button type="submit">Subir</button>
-        </form>
-    `);
+    res.send(res.sendFile(path.join(__dirname, 'index.html')));
 });
 
 // Manejar la carga de archivos
