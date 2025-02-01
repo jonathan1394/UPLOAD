@@ -9,7 +9,7 @@ const port = 3000;
 // Configurar almacenamiento con Multer
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, '/');
+        cb(null, '/Uploads');
     },
     filename: (req, file, cb) => {
         cb(null, file.originalname);
