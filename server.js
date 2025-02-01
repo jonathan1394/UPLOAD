@@ -9,7 +9,7 @@ const port = 3000;
 // Configurar almacenamiento con Multer
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, '/Uploads');
+        cb(null, '/uploads');
     },
     filename: (req, file, cb) => {
         cb(null, file.originalname);
@@ -37,5 +37,5 @@ app.post('/upload', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Servidor escuchando en http://216.24.60.0/24:${port}`);
+    console.log(`Servidor escuchando en http://localhost:${port}`);
 });
