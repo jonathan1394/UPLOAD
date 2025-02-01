@@ -37,5 +37,5 @@ app.post('/upload', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Servidor escuchando en http://localhost:${port}`);
+    console.log(`Servidor escuchando en http://216.24.60.0/24:${port}`);
 });
