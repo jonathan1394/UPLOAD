@@ -1,54 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias Hoy</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            border: 1px solid #ddd;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-        }
-        .noticia {
-            border-bottom: 1px solid #ccc;
-            padding: 10px 0;
-        }
-        .formulario {
-            margin-top: 20px;
-            padding: 10px;
-            background: #f9f9f9;
-            border: 1px solid #ddd;
-        }
-    </style>
+    <title>File Uploader</title>
 </head>
 <body>
-
-    <h1>📰 Noticias Hoy</h1>
-
-    <div class="noticia">
-        <h2>🌎 Titular Importante del Día</h2>
-        <p>El presidente anuncia nuevas reformas económicas que impactarán a millones de ciudadanos...</p>
-    </div>
-
-    <div class="noticia">
-        <h2>⚽ Deportes: La Liga está que arde</h2>
-        <p>El equipo líder se enfrenta a su eterno rival en un partido decisivo...</p>
-    </div>
-
-    <div class="formulario">
-        <h2>📎 Enviar Archivo</h2>
-        <form action="/upload" method="post" enctype="multipart/form-data">
-            <input type="file" name="archivo" required><br><br>
-            <input type="submit" value="Subir Archivo">
-        </form>
-    </div>
-
+    <h1>Subir archivo</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="archivo"><br><br>
+        <input type="submit" value="Subir archivo">
+    </form>
 </body>
 </html>
