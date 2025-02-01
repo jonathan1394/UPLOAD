@@ -3,73 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias Global | Últimas Noticias</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Noticias Hoy</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         }
-        .header {
-            background-color: #ff4500;
-            color: white;
-            padding: 15px;
+        h1 {
             text-align: center;
         }
-        .news-section {
-            margin: 20px 0;
+        .noticia {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
         }
-        .news-card {
+        .formulario {
+            margin-top: 20px;
+            padding: 10px;
+            background: #f9f9f9;
             border: 1px solid #ddd;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            background-color: #fff;
         }
     </style>
 </head>
 <body>
 
-    <!-- 📰 Cabecera -->
-    <div class="header">
-        <h1>Noticias Global</h1>
-        <p>Las últimas noticias del mundo al instante</p>
+    <h1>📰 Noticias Hoy</h1>
+
+    <div class="noticia">
+        <h2>🌎 Titular Importante del Día</h2>
+        <p>El presidente anuncia nuevas reformas económicas que impactarán a millones de ciudadanos...</p>
     </div>
 
-    <div class="container mt-4">
-        <!-- 🗞️ Sección de Noticias -->
-        <div class="news-section">
-            <h2>Últimas Noticias</h2>
-            
-            <div class="news-card">
-                <h3>🌍 Cambio Climático: Nuevas Medidas en la ONU</h3>
-                <p>La ONU ha anunciado nuevas políticas ambientales para reducir las emisiones de carbono...</p>
-                <a href="#">Leer más</a>
-            </div>
-
-            <div class="news-card">
-                <h3>⚽ La Selección Nacional Se Prepara para el Mundial</h3>
-                <p>El entrenador ha revelado la lista de convocados para los próximos partidos...</p>
-                <a href="#">Leer más</a>
-            </div>
-
-            <div class="news-card">
-                <h3>💰 Economía: Aumento del Salario Mínimo en 2025</h3>
-                <p>El gobierno ha aprobado un aumento del salario mínimo que impactará a millones de trabajadores...</p>
-                <a href="#">Leer más</a>
-            </div>
-        </div>
-
-        <!-- 📤 Formulario de Carga de Archivos -->
-        <div class="news-section">
-            <h2>📎 Enviar Archivo</h2>
-            <p>Comparte documentos o imágenes relacionadas con noticias.</p>
-            <form action="/upload" method="post" enctype="multipart/form-data" class="border p-4 rounded">
-                <input type="file" name="archivo" class="form-control mb-3">
-                <input type="submit" value="Subir Archivo" class="btn btn-primary">
-            </form>
-        </div>
+    <div class="noticia">
+        <h2>⚽ Deportes: La Liga está que arde</h2>
+        <p>El equipo líder se enfrenta a su eterno rival en un partido decisivo...</p>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="formulario">
+        <h2>📎 Enviar Archivo</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="archivo" required><br><br>
+            <input type="submit" value="Subir Archivo">
+        </form>
+    </div>
+
 </body>
 </html>
